@@ -1,0 +1,12 @@
+version: 1.0
+source:
+  type: image
+  repository: https://github.com/AnasAliAbbasi/Training-Portal
+  build: ./ # The path to the Dockerfile
+  dockerfile: Dockerfile
+
+runtime:
+  nodejs:
+    family: CUSTOM
+    memory: 512MiB
+  starter: custom
